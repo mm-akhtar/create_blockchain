@@ -106,12 +106,12 @@ def get_chain():
 def is_valid():
     is_valid = blockchain.is_chain_valid(blockchain.chain)
     if is_valid:
-        response={'messege':'All good blockchain is valid'}
+        response={'message':'All good blockchain is valid'}
     else:
-        response={'messege': 'We have a problem blockchain is not valid'}
+        response={'message': 'We have a problem blockchain is not valid'}
         
     return jsonify(response), 200
 
 # Running the app
-app.run(host='0.0.0.0', port=5000)
+app.run(host='localhost', port=5000)
     
